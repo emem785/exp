@@ -16,7 +16,8 @@ app.use('/api/actors', require('./routes/api/actors'))
 //Set home route
 app.get('/', (req, res) => {
         // res.sendFile(path.join(__dirname, 'public', 'index.html'))
-        res.sendFile(path.join(__dirname, 'static', 'index.html'))
+        // res.sendFile(path.join(__dirname, 'static', 'index.html'))
+        res.json({msg:"nah"})
 })
 
 
